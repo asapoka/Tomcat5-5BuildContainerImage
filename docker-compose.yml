@@ -2,8 +2,11 @@ version: "3"
 
 services:
   app:
-    container_name: tomcat
+    build:
+      context: .
+      dockerfile: ./tomcat/Dockerfile
     image: tomcat:5.5-jdk8-openjdk
+    container_name: tomcat
     ports:
       - 8080:8080
     volumes:

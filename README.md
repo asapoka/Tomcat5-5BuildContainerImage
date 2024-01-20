@@ -6,10 +6,11 @@ cd Tomcat5-5BuildContainerImage && \
 docker image build -f ./tomcat/Dockerfile --tag tomcat:5.5-jdk8-openjdk .
 ```
 
+# test run
 ```
 docker compose up -d
 ```
 
-# oopen url
+# open url
 
 http://localhost:8080/

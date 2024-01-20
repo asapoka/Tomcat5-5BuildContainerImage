@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    container_name: tomcat
+    image: tomcat:5.5-jdk8-openjdk
+    ports:
+      - 8080:8080
+    volumes:
+      - ./webapps:/usr/local/tomcat/webapps
+    command: /usr/local/apache-tomcat-5.5.36/bin/catalina.sh run
